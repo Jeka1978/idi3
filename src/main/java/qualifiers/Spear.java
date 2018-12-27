@@ -8,8 +8,7 @@ import static qualifiers.WeaponType.SHORT_DIST;
 /**
  * @author Evgeny Borisov
  */
-@Component
-@BrightArmy
+@Army(ArmyType.BRIGHT)
 public class Spear implements Weapon {
     @Override
     public void kick() {

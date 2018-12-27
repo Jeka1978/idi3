@@ -8,7 +8,7 @@ import static qualifiers.WeaponType.LONG_DIST;
  * @author Evgeny Borisov
  */
 @Component
-@DarkArmy
+@Army(ArmyType.DARK)
 public class Stone implements Weapon {
     @Override
     public void kick() {

@@ -25,8 +25,8 @@ public class Elf implements Character {
     private Weapon currentWeapon;
 
 
-    @Autowired
-    @BrightArmy
+
+    @Army(ArmyType.BRIGHT)
     public Elf(List<Weapon> weapons) {
         this.weapons = weapons.stream().collect(groupingBy(Weapon::type));
     }
